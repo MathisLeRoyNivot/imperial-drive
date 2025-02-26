@@ -1,43 +1,63 @@
 # Imperial Drive
 
--   Next.JS 15 (TypeScript)
--   Clerk
--   HyGraph (GraphQL)
--   Tailwind CSS & Shad/cn
+Imperial Drive is a premium car rental platform that delivers an exceptional user experience for booking luxury vehicles. Built with modern technologies and a focus on performance and design, Imperial Drive provides a seamless solution for both renters and administrators.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Project Tech Stack
+
+-   **[Next.js 15](https://nextjs.org/):** A powerful React framework for building server-rendered and statically generated web applications.
+-   **[Clerk](https://clerk.com/):** Secure user authentication and management.
+-   **[HyGraph](https://app.hygraph.com/):** A headless CMS powered by GraphQL for dynamic content management.
+-   **[Tailwind CSS](https://tailwindcss.com/)** & **[shadcn/ui](https://ui.shadcn.com/):** Utility-first CSS framework and modern UI components to build beautiful, responsive designs.
+
+This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+-   [Node.js](https://nodejs.org/) (v14 or later)
+-   Your preferred package manager (npm, yarn, pnpm, or bun)
+
+### Setup Environment
+
+Create a `.env.local` file in the root directory of your project with the following variables:
 
 ```bash
+# .env.local
+
+# Clerk Authentication Keys (get these from https://clerk.com/)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your_next_public_clerk_publishable_key>
+CLERK_SECRET_KEY=<your_clerk_secret_key>
+
+# Add additional environment variables required by HyGraph or other services here.
+```
+
+### Running the Development Server
+
+Start the development server using one of the following commands:
+
+```bash
+Copier
+# Using npm:
 npm run dev
-# or
+
+# Using yarn:
 yarn dev
-# or
+
+# Using pnpm:
 pnpm dev
-# or
+
+# Using bun:
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   **Premium Rental Experience**: Browse a curated selection of luxury cars.
+-   **Secure Authentication**: Robust user management with Clerk.
+-   **Dynamic Content**: Manage and update content seamlessly using HyGraph and GraphQL.
+-   **Modern, Responsive UI**: Styled with Tailwind CSS and shadcn/ui for a polished, mobile-friendly design.
